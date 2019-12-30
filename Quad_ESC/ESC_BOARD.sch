@@ -2515,50 +2515,6 @@ LED</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="INA4181A4">
-<packages>
-<package name="CSS2H-2512">
-<smd name="1" x="0" y="0" dx="3.4" dy="1.8" layer="1"/>
-<smd name="2" x="0" y="5.2" dx="3.4" dy="1.8" layer="1"/>
-<text x="-2.54" y="7.62" size="1.27" layer="25">&gt;Name</text>
-<text x="-2.54" y="-3.81" size="1.27" layer="27">&gt;Value</text>
-<wire x1="-2.54" y1="6.35" x2="-2.54" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="-1.27" x2="2.54" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="2.54" y1="-1.27" x2="2.54" y2="6.35" width="0.127" layer="21"/>
-<wire x1="2.54" y1="6.35" x2="-2.54" y2="6.35" width="0.127" layer="21"/>
-</package>
-</packages>
-<symbols>
-<symbol name="CSS2H-2512">
-<pin name="1" x="-7.62" y="0" visible="off" length="short"/>
-<pin name="2" x="10.16" y="0" visible="off" length="short" rot="R180"/>
-<wire x1="-5.08" y1="2.54" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-2.54" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-2.54" x2="7.62" y2="2.54" width="0.254" layer="94"/>
-<wire x1="7.62" y1="2.54" x2="-5.08" y2="2.54" width="0.254" layer="94"/>
-<text x="-2.54" y="5.08" size="1.27" layer="95">&gt;NAME</text>
-<text x="-2.54" y="-5.08" size="1.27" layer="96">&gt;VALUE</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="CSS2H-2512">
-<gates>
-<gate name="G$1" symbol="CSS2H-2512" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="CSS2H-2512">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2583,7 +2539,7 @@ LED</description>
 <part name="GND4" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="GND10" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="U$8" library="PI_Shield_Library" deviceset="TCAN337D" device=""/>
-<part name="C10" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="4.7UF" device="0603" package3d_urn="urn:adsk.eagle:package:37414/1" value="4.7uF"/>
+<part name="C10" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="4.7UF" device="0603" package3d_urn="urn:adsk.eagle:package:37414/1" value="100nF"/>
 <part name="+3V3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="U$4" library="PI_Shield_Library" deviceset="STM32F042K6T6" device=""/>
 <part name="C1" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="4.7UF" device="0603" package3d_urn="urn:adsk.eagle:package:37414/1" value="4.7uF"/>
@@ -2639,7 +2595,6 @@ LED</description>
 <part name="GND20" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="P+7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 <part name="P+8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
-<part name="RSH1" library="INA4181A4" deviceset="CSS2H-2512" device="" value="1 mΩ"/>
 </parts>
 <sheets>
 <sheet>
@@ -2841,7 +2796,6 @@ LED</description>
 </instance>
 <instance part="P+7" gate="1" x="195.58" y="50.8"/>
 <instance part="P+8" gate="1" x="259.08" y="50.8"/>
-<instance part="RSH1" gate="G$1" x="330.2" y="190.5"/>
 </instances>
 <busses>
 </busses>
