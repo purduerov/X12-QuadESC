@@ -178,8 +178,7 @@
 <wire x1="50.8" y1="2.286" x2="55.88" y2="2.286" width="0.254" layer="25"/>
 <wire x1="83.82" y1="2.286" x2="88.9" y2="2.286" width="0.254" layer="25"/>
 <wire x1="83.82" y1="38.354" x2="88.9" y2="38.354" width="0.254" layer="25"/>
-<text x="106.172" y="28.702" size="1.27" layer="21">ROV X12 Quad ESC v1
-12/30/2019
+<text x="67.056" y="37.084" size="1.016" layer="21">ROV X12 Quad ESC v1
 Jacob Bobson</text>
 </plain>
 <libraries>
@@ -1338,19 +1337,23 @@ Please make sure your boards conform to these design rules.
 <contactref element="U$4" pad="PA13"/>
 <contactref element="U1" pad="P$5"/>
 <wire x1="67.844" y1="20.565" x2="67.844" y2="21.818" width="0.254" layer="1"/>
-<wire x1="67.844" y1="21.818" x2="67.31" y2="22.352" width="0.254" layer="1"/>
-<wire x1="67.31" y1="22.352" x2="64.77" y2="22.352" width="0.254" layer="1"/>
-<wire x1="64.77" y1="22.352" x2="64.516" y2="22.606" width="0.254" layer="1"/>
+<wire x1="64.516" y1="22.606" x2="64.77" y2="22.352" width="0.254" layer="1"/>
 <wire x1="64.516" y1="22.606" x2="64.516" y2="23.622" width="0.254" layer="1"/>
+<via x="67.844" y="21.818" extent="1-16" drill="0.35"/>
+<wire x1="64.77" y1="22.352" x2="67.564" y2="22.352" width="0.254" layer="1"/>
+<wire x1="67.564" y1="22.352" x2="67.844" y2="22.072" width="0.254" layer="1"/>
+<wire x1="67.844" y1="22.072" x2="67.844" y2="21.818" width="0.254" layer="1"/>
 </signal>
 <signal name="SWCLK">
 <contactref element="U$4" pad="PA14"/>
 <contactref element="U1" pad="P$2"/>
 <wire x1="67.044" y1="20.565" x2="67.044" y2="21.602" width="0.254" layer="1"/>
-<wire x1="67.044" y1="21.602" x2="66.802" y2="21.844" width="0.254" layer="1"/>
-<wire x1="66.802" y1="21.844" x2="60.96" y2="21.844" width="0.254" layer="1"/>
-<wire x1="60.96" y1="21.844" x2="60.706" y2="22.098" width="0.254" layer="1"/>
+<wire x1="66.802" y1="21.844" x2="67.044" y2="21.602" width="0.254" layer="1"/>
+<wire x1="60.706" y1="22.098" x2="60.96" y2="21.844" width="0.254" layer="1"/>
 <wire x1="60.706" y1="22.098" x2="60.706" y2="23.622" width="0.254" layer="1"/>
+<wire x1="60.96" y1="21.844" x2="61.722" y2="21.844" width="0.254" layer="1"/>
+<via x="61.722" y="21.844" extent="1-16" drill="0.35"/>
+<wire x1="61.722" y1="21.844" x2="66.802" y2="21.844" width="0.254" layer="1"/>
 </signal>
 <signal name="OSC_IN">
 <contactref element="U$4" pad="PF0-OSC_IN"/>
@@ -1466,13 +1469,13 @@ Please make sure your boards conform to these design rules.
 <contactref element="U$1" pad="P$5"/>
 </signal>
 <signal name="GND1">
-<via x="74.168" y="35.052" extent="1-16" drill="0.35"/>
+<via x="73.66" y="33.782" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="GND2">
-<via x="76.708" y="35.052" extent="1-16" drill="0.35"/>
+<via x="77.978" y="33.782" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="GND3">
-<via x="75.692" y="33.274" extent="1-16" drill="0.35"/>
+<via x="75.692" y="33.782" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="GND4">
 <via x="59.182" y="17.272" extent="1-16" drill="0.35"/>

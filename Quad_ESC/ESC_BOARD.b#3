@@ -1177,7 +1177,13 @@ Please make sure your boards conform to these design rules.
 <vertex x="94.996" y="19.812"/>
 <vertex x="94.996" y="8.382"/>
 </polygon>
-<wire x1="54.61" y1="26.67" x2="85.09" y2="15.24" width="0" layer="19" extent="1-1"/>
+<wire x1="46.94" y1="17.16" x2="43.83" y2="17.16" width="0.8128" layer="16"/>
+<wire x1="43.83" y1="17.16" x2="41.91" y2="15.24" width="0.8128" layer="16"/>
+<wire x1="41.91" y1="15.24" x2="41.91" y2="2.032" width="0.8128" layer="16"/>
+<wire x1="41.91" y1="2.032" x2="42.926" y2="1.016" width="0.8128" layer="16"/>
+<wire x1="42.926" y1="1.016" x2="84.328" y2="1.016" width="0.8128" layer="16"/>
+<wire x1="84.328" y1="1.016" x2="85.09" y2="1.778" width="0.8128" layer="16"/>
+<wire x1="85.09" y1="1.778" x2="85.09" y2="5.08" width="0.8128" layer="16"/>
 </signal>
 <signal name="+3V3">
 <contactref element="C10" pad="1"/>
@@ -1492,9 +1498,6 @@ Please make sure your boards conform to these design rules.
 <via x="81.026" y="2.794" extent="1-16" drill="0.35"/>
 </signal>
 </signals>
-<errors>
-<approved hash="21,19,683894396a3968c6"/>
-</errors>
 </board>
 </drawing>
 <compatibility>
