@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.6.1">
+<eagle version="9.1.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2595,6 +2595,7 @@ LED</description>
 <part name="GND20" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="P+7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 <part name="P+8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
+<part name="GND13" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2796,6 +2797,9 @@ LED</description>
 </instance>
 <instance part="P+7" gate="1" x="195.58" y="50.8"/>
 <instance part="P+8" gate="1" x="259.08" y="50.8"/>
+<instance part="GND13" gate="GND" x="25.4" y="53.34">
+<attribute name="VALUE" x="23.495" y="50.165" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -3020,6 +3024,14 @@ LED</description>
 <junction x="248.92" y="71.12"/>
 <pinref part="GND20" gate="GND" pin="GND"/>
 <wire x1="261.62" y1="71.12" x2="261.62" y2="68.58" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND13" gate="GND" pin="GND"/>
+<wire x1="25.4" y1="55.88" x2="25.4" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="S"/>
+<wire x1="50.8" y1="58.42" x2="38.1" y2="58.42" width="0.1524" layer="91"/>
+<label x="38.1" y="58.42" size="1.778" layer="95"/>
+<wire x1="25.4" y1="58.42" x2="38.1" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TIM3_CH1" class="0">
@@ -3577,21 +3589,6 @@ LED</description>
 <label x="63.5" y="139.7" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="S" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="S"/>
-<wire x1="50.8" y1="58.42" x2="38.1" y2="58.42" width="0.1524" layer="91"/>
-<label x="38.1" y="58.42" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="OE"/>
-<pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="76.2" y1="55.88" x2="86.36" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="55.88" x2="86.36" y2="53.34" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="SWCLK_IN" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="1A"/>
@@ -3633,6 +3630,13 @@ LED</description>
 <pinref part="U$1" gate="G$1" pin="P$5"/>
 <wire x1="210.82" y1="66.04" x2="200.66" y2="66.04" width="0.1524" layer="91"/>
 <label x="198.12" y="66.04" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="OE"/>
+<pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="76.2" y1="55.88" x2="86.36" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="55.88" x2="86.36" y2="53.34" width="0.1524" layer="91"/>
+<label x="78.74" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
